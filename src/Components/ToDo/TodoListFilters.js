@@ -9,14 +9,14 @@ function TodoListFilters() {
     setFilter(value);
   };
   return (
-    <>
-      Filter:
+    <div>
+      <span style={{ marginRight: "1rem" }}>Filter:</span>
       <select value={filter} onChange={updateFilter}>
         <option value="Show All">All</option>
         <option value="Show Completed">Completed</option>
         <option value="Show Uncompleted">Uncompleted</option>
       </select>
-    </>
+    </div>
   );
 }
 

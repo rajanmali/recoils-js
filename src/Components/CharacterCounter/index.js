@@ -5,7 +5,7 @@ import CharacterCount from "./CharacterCount";
 function CharacterCounter() {
   return (
     <div className="content-container">
-      <h2>Character Counter</h2>
+      <h2 className="main-title">Character Counter</h2>
       <TextInput />
       <CharacterCount />
     </div>

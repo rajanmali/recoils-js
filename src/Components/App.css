@@ -16,29 +16,25 @@
   z-index: 10;
 }
 
-.brand__container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-.nav__brand {
-  padding-left: 1rem;
-}
-
-.nav__brand-alt {
-  padding-right: 1rem;
-}
-
-.nav__brand-alt a {
+.nav__brand a {
+  margin-left: 3rem;
   text-decoration: none;
-  color: white;
-  border-bottom: 1px solid white;
+  color: palegreen;
+  font-weight: 800;
+  transition: all 0.2s ease;
+}
+.nav__brand a:hover {
+  border-bottom: 1px solid palegreen;
+}
+
+.nav__list {
+  margin-left: 3rem;
 }
 
 .nav__list li {
   margin-bottom: 0.8rem;
 }
+
 .nav__list a {
   text-decoration: none;
   color: white;
@@ -46,7 +42,28 @@
 }
 
 .nav__list a:hover {
+  color: palegreen;
+  border-bottom: 1px solid palegreen;
+}
+
+.footer {
+  position: absolute;
+  font-size: 1rem;
+  bottom: 1rem;
+  left: 3rem;
+  right: 0;
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: palegreen;
   border-bottom: 1px solid white;
+  transition: all 0.2s ease;
+}
+
+.footer a:hover {
+  border-bottom: 1px solid palegreen;
 }
 
 .content-container {
@@ -54,6 +71,24 @@
   top: 10rem;
   left: 3rem;
   font-size: 1rem;
+}
+
+.main-title {
+  width: 150px;
+  color: palegreen;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid palegreen;
+}
+
+.home-link {
+  text-decoration: none;
+  color: palegreen;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.2s ease;
+}
+.home-link:hover {
+  border-bottom: 1px solid palegreen;
 }
 
 .input-field {

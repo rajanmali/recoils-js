@@ -11,7 +11,7 @@ function ToDo() {
   const todoList = useRecoilValue(todoListState);
   return (
     <div className="content-container">
-      <h2>To Do</h2>
+      <h2 className="main-title">To-Do Application</h2>
       <div
         style={{
           marginBottom: "1rem",

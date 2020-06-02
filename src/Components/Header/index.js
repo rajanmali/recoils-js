@@ -4,19 +4,9 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <nav>
-      <div className="brand__container">
-        <h3 className="nav__brand">Recoil JS</h3>
-        <h3 className="nav__brand-alt">
-          Find me at:{" "}
-          <a
-            href="https://twitter.com/notrajanmali"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            @notrajanmali
-          </a>
-        </h3>
-      </div>
+      <h3 className="nav__brand">
+        <Link to="/">Recoil JS</Link>
+      </h3>
       <ul className="nav__list">
         <li>
           <Link to="/character-counter">Character Counter</Link>
