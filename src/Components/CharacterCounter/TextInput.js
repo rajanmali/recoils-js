@@ -9,9 +9,14 @@ function TextInput() {
   };
   return (
     <div>
-      <input type="text" value={text} onChange={handleChange} />
+      <input
+        type="text"
+        value={text}
+        onChange={handleChange}
+        className="input-field"
+      />
       <br />
-      Echo: {text}
+      <p>Echo: {text}</p>
     </div>
   );
 }

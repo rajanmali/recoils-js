@@ -1,11 +1,63 @@
 .App {
-  text-align: center;
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: relative;
+}
+
+.App nav {
+  width: 100%;
+  font-size: 1rem;
+  background-color: #202225;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.brand__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.nav__brand {
+  padding-left: 1rem;
+}
+
+.nav__brand-alt {
+  padding-right: 1rem;
+}
+
+.nav__brand-alt a {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.nav__list li {
+  margin-bottom: 0.8rem;
+}
+.nav__list a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.nav__list a:hover {
+  border-bottom: 1px solid white;
+}
+
+.content-container {
+  position: absolute;
+  top: 10rem;
+  left: 3rem;
+  font-size: 1rem;
+}
+
+.input-field {
+  padding: 0.25rem;
+  font-size: 1.25rem;
+  width: 30rem;
 }

@@ -4,7 +4,7 @@ import { charCountState } from "../../Store/selectors";
 
 function CharacterCount() {
   const count = useRecoilValue(charCountState);
-  return <>Character Count: {count}</>;
+  return <p>Character Count: {count}</p>;
 }
 
 export default CharacterCount;
